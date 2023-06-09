@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from './components/Card';
-import SettingCard from './components/SettingCard';
-import ShareCard from './components/ShareCard';
+import BlueCard from './components/BlueCard';
+import PinkCard from './components/PinkCard';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 body {
-  background-color: #e8e9eb;
+  background-color: #f5f5f5;
 }
 h3 {
   font-size: 25px;
@@ -22,11 +22,11 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Card className="setting" value="Mini - Project" name="mini">
-        <SettingCard name="setting" />
+      <Card className="blueCard" value="Mini - Project" name="mini">
+        <BlueCard name="blueCard" />
       </Card>
-      <Card className="share" value="Social Media - Project">
-        <ShareCard />
+      <Card className="pinkCard" value="Social Media - Project">
+        <PinkCard name="pinkCard" />
       </Card>
     </>
   );

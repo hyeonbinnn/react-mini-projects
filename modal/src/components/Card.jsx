@@ -8,8 +8,8 @@ const CardDiv = styled.div`
   box-shadow: 5px 5px gray;
   margin: 50px auto;
   text-align: center;
-  width: ${(props) => (props.className === 'setting' ? '500px' : '700px')};
-  background-color: ${(props) => (props.name === 'mini' ? '#edf5ff' : '#fff2ed')};
+  width: ${(props) => (props.className === 'blueCard' ? '500px' : '700px')};
+  background-color: ${(props) => (props.name === 'mini' ? '#eaf0fd' : '#fdebf7')};
 `;
 
 const Card = (props) => {
