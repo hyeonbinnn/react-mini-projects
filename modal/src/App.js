@@ -1,8 +1,6 @@
 import React from 'react';
-import Card from './components/Card';
-import BlueCard from './components/BlueCard';
-import PinkCard from './components/PinkCard';
 import { createGlobalStyle } from 'styled-components';
+import Card from './components/Card';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -22,12 +20,8 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Card className="blueCard" value="Mini - Project" name="mini">
-        <BlueCard name="blueCard" />
-      </Card>
-      <Card className="pinkCard" value="Social Media - Project">
-        <PinkCard name="pinkCard" />
-      </Card>
+      <Card className="blue" value="Project" name="mini"></Card>
+      <Card className="pink" value="Social Media"></Card>
     </>
   );
 };

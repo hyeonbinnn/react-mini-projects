@@ -1,11 +1,11 @@
+import styled from 'styled-components';
+
 /* *모달창 중앙 정렬, 최상단 배치 */
-.container {
+export const Container = styled.div`
   /* 모달창 최상단 위치 */
   z-index: 999;
-
   /* 모달창 크기 */
   width: 500px;
-
   /* 모달창 가운데 정렬 */
   /* top, bottom, left, right 는 브라우저 기준으로 작동 */
   /* translate는 본인의 크기 기준으로 작동 */
@@ -13,25 +13,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   /* 모달창 UI */
-  background-color: #eaf0fd;
+  background-color: ${(props) => (props.name === 'mini' ? '#eaf0fd' : '#fdebf7')};
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   box-shadow: 5px 5px gray;
   padding: 20px;
-}
+`;
 
-.title {
+export const Title = styled.h2`
   margin: 20px auto 40px auto;
-}
+`;
 
-.content {
+export const Content = styled.p`
   margin: 60px auto;
-}
+`;
 
 /* * 모달창 X 버튼 */
-.close {
+export const Close = styled.button`
   position: absolute;
   right: 10px;
   top: 10px;
@@ -39,4 +38,4 @@
   border: 1px solid grey;
   border-radius: 5px;
   font-weight: bold;
-}
+`;
