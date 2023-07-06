@@ -12,7 +12,7 @@ const ModalOne = ({ setModalOpen }) => {
       <button className={styles.close} onClick={closeModal}>
         X
       </button>
-      <h2 className={styles.title}>Mini Modla Modal</h2>
+      <h2 className={styles.title}>Mini Modal Modal</h2>
       <hr />
       <p className={styles.content}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique porro cum enim sunt

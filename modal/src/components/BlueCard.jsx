@@ -15,6 +15,7 @@ const BlueCard = (props) => {
   // 모달창 노출
   const showModal = () => {
     setModalOpen(true);
+    console.log();
   };
 
   return (
