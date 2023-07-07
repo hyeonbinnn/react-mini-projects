@@ -1,41 +1,66 @@
 import styled from 'styled-components';
 
-/* *모달창 중앙 정렬, 최상단 배치 */
-export const Container = styled.div`
-  /* 모달창 최상단 위치 */
-  z-index: 999;
-  /* 모달창 크기 */
-  width: 500px;
-  /* 모달창 가운데 정렬 */
-  /* top, bottom, left, right 는 브라우저 기준으로 작동 */
-  /* translate는 본인의 크기 기준으로 작동 */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* 모달창 UI */
-  background-color: ${(props) => (props.name === 'mini' ? '#eaf0fd' : '#fdebf7')};
+export const ModalBg = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  overflow: hidden;
+`;
+
+export const Card = styled.div`
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   box-shadow: 5px 5px gray;
-  padding: 20px;
+  /* margin: 50px auto; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: ${(props) => (props.className === 'blueModal' ? '500px' : '700px')};
+  background-color: ${(props) => (props.name === 'small' ? '#eaf0fd' : '#fdebf7')};
 `;
 
-export const Title = styled.h2`
-  margin: 20px auto 40px auto;
-`;
-
-export const Content = styled.p`
-  margin: 60px auto;
-`;
-
-/* * 모달창 X 버튼 */
-export const Close = styled.button`
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: white;
-  border: 1px solid grey;
+export const Button = styled.button`
+  width: 90px;
+  height: 28px;
   border-radius: 5px;
   font-weight: bold;
+  margin: 10px auto;
+  &:hover {
+    background-color: ${'transparent'};
+  }
+  &:active {
+    background-color: ${'#d0cdd6'};
+  }
+`;
+
+export const BlueButton1 = styled(Button)`
+  background-color: #ffffff;
+  margin-right: 20px;
+`;
+
+export const BlueButton2 = styled(Button)`
+  background-color: #ffffff;
+`;
+
+export const PinkButton1 = styled(Button)`
+  background-color: #f1cbe5;
+  margin-right: 20px;
+`;
+export const PinkButton2 = styled(Button)`
+  background-color: #c5d7fe;
+  margin-right: 20px;
+`;
+export const PinkButton3 = styled(Button)`
+  background-color: #adddc5;
+  margin-right: 20px;
+`;
+export const PinkButton4 = styled(Button)`
+  background-color: #d5cdfb;
 `;
