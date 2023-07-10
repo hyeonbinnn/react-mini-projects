@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import * as S from './Modal.style';
 
-const Card = ({ onClose, ...props }) => {
+const Modal = ({ onClose, ...props }) => {
   const modalRef = useRef();
 
   const clickOutside = (e) => {
@@ -61,4 +61,4 @@ const Card = ({ onClose, ...props }) => {
   );
 };
 
-export default Card;
+export default Modal;

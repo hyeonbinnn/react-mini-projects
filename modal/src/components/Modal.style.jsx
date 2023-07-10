@@ -16,7 +16,6 @@ export const Card = styled.div`
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   box-shadow: 5px 5px gray;
-  /* margin: 50px auto; */
   position: fixed;
   top: 50%;
   left: 50%;
