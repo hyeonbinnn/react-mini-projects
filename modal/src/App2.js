@@ -15,7 +15,7 @@ const App2 = () => {
 
   return (
     <Container>
-      <h1>Welcome to my app!</h1>
+      <h1>Welcome to my app!!</h1>
       <button onClick={handleOpenModal}>Open Modal</button>
       {isModalOpen && (
         <Modal2 title="Hello 😉" content="Welcome Modal World" onClose={handleCloseModal} />
